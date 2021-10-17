@@ -1,10 +1,13 @@
-import { RespositoryList } from './components/RepositoryList'
-import './styles/global.scss'
+import { Header } from './components/Header'
+import { RepositoryList } from './components/RepositoryList'
+import { GlobalStyles } from './styles/global'
 
 export function App() {
   return (
     <>
-      <RespositoryList />
+      <Header />
+      <RepositoryList />
+      <GlobalStyles />
     </>
   )
 }
