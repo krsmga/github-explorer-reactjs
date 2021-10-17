@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
-  background: var(--header-color);
+  background: var(--gold-dark);
 `
 export const Content = styled.div`
   max-width: 1120px;
@@ -31,8 +31,8 @@ export const Content = styled.div`
       align-items: center;
 
       input {
-        color: var(--input-text-color);
-        background: var(--input-color);        
+        color: var(--gold-dark);
+        background: var(--gold-light);
         font-size: 1rem;
         font-weight: 400;
         width: 18rem;
@@ -49,7 +49,7 @@ export const Content = styled.div`
 
       button {
         display: flex;
-        background-color: var(--button-color);
+        background-color: var(--gold-black);
         color: #fff;
         font-size: 1.6rem;
         font-weight: 600;

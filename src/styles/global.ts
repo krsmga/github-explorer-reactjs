@@ -3,11 +3,11 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
   :root {
     --hue: 43;
-    --header-color: hsl(var(--hue), 85%, 39%);
-    --input-color: hsl(var(--hue), 85%, 65%);
-    --input-text-color: hsl(var(--hue), 12%, 15%);
-    --input-placeholder-color: hsl(var(--hue), 85%, 39%);
-    --button-color: hsl(var(--hue), 85%, 18%);
+    --background: hsl(var(--hue), 0%, 6%);
+    --gold: hsl(var(--hue), 90%, 60%);
+    --gold-dark: hsl(var(--hue), 85%, 39%);
+    --gold-light: hsl(var(--hue), 90%, 80%);
+    --gold-black: hsl(var(--hue), 90%, 20%);
   }
 
   * {
@@ -28,8 +28,7 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     font: 16px 'Poppins', sans-serif;
-    color: #121214;
-    background: rgb(68, 68, 68);
+    background: var(--background);
     -webkit-font-smoothing: antialiased;  
   }
 
@@ -44,10 +43,5 @@ export const GlobalStyles = createGlobalStyle`
 
   button {
     cursor: pointer;
-  }
-
-  [disabled] {
-    opacity: 0.6;
-    cursor: not-allowed;
   }
 `
